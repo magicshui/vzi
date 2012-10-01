@@ -125,7 +125,6 @@ def route_get_movie_with_id(id):
 def route_movie_background():
     dbSession=db_session()
     movie=dbSession.query(Movie).filter(Movie.back=='').all()
-    dbSession.flush()
     return render_template('back.html',res=movie)
     
 @app.route('/movie/<string:id>/back',methods=['POST'])
