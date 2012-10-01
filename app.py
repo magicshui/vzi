@@ -132,6 +132,7 @@ def route_movie_background_up(id):
     cut = request.files['back']
     movie=dbSession.query(Movie).filter(Movie.id==id).first()
     _save_path=os.path.join(UPLOAD_FOLDER_BACK, movie.id+'.'+cut.filename.split('.')[-1])
+    cut.save(_save_path)
     movie.back="http://movie.shui.us/static/back/"+movie.id+'.'+cut.filename.split('.')[-1]
     dbSession.commit()
     return redirect('/movie/back')
