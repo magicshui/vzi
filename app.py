@@ -56,7 +56,8 @@ def route_oauth_weibo():
         return redirect('/')
     session['name']=result.name
     session['come']='sina'
-    if not dbSession.query(User).filter(User.name==result.name).all():
+    if dbSession.query(User).filter(User.name==result.name).all():
+        session['avatar']=result.profile_image_url
         return redirect('/')
     _user= User(name=result.name,come='sina',avatar=result.profile_image_url)
     dbSession.add(_user)
