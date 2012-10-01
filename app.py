@@ -83,7 +83,7 @@ def _get_movie_from_douban(id):
         Doubanclient.auth_with_token(r_.douban)
         data=Doubanclient.movie.get(id)
         movie = Movie(id=id,title=data['title'],alt_title=data['alt_title'],
-        image=data['image'],alt=data['alt'],summary=data['summary'])
+        image=data['image'].replace('',''),alt=data['alt'],summary=data['summary'])
         return movie
     except Exception,e:
         raise
@@ -165,5 +165,8 @@ def route_one_line(movie_id,id):
 def route_logout():
     session.clear()
     return redirect('/')
+@app.route('/me')
+def route_me():
+    return session['name']+session['avatar']
 if __name__=='__main__':
     app.run()

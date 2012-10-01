@@ -11,7 +11,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import *
 from sqlalchemy import Column, Integer, String
 from flask import *
-from flask import request,render_template,session,redirect
 from flask.views import MethodView
 from sqlalchemy.orm import sessionmaker
 import md5
@@ -116,10 +115,7 @@ class Lines(Base):
         self.crt_time=datetime.now()
         self.content=content
         self.movie_id=movie_id
-        if  'SERVER_SOFTWARE' in os.environ:
-            self.cut=cut
-        elif cut!='':
-            self.cut="/static/movie/"+self.id+'.'+cut
+        self.cut="/static/movie/"+self.id+'.'+cut
 class Movie(Base):
     __tablename__='movie_list'
     id=Column(String(20),primary_key=True)
