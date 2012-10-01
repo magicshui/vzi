@@ -86,7 +86,7 @@
                     <td width="auto" valign="top" align="left">
                         <div class="fr">
                             <div id="thank_area_420434" class="thank_area">
-                                <a  href="javascript:show_weibo('http://movie.shui.us/movie/{{x.movie_id}}', '{{x.content}}----《{{movie.title}}》',{%if x.cut%}'{{movie.cut}}'{%else%}{{movie.image}}{%endif%});" class="thank">转发到新浪微博</a>
+                                <a  href="javascript:show_weibo('http://movie.shui.us/movie/{{x.movie_id}}', '{{x.content.replace(' ','')}}----《{{movie.title}}》',{%if x.cut%}'{{movie.cut}}'{%else%}{{movie.image}}{%endif%});" class="thank">转发到新浪微博</a>
                                 <a href="/movie/{{x.movie_id}}/lines/{{x.id}}">分享</a>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                     {% if x.cut %}
                      <td width="80" valign="top" >
                          
-                         <img src="{{x.cut}}" style='margin-top:20px' width="80px"/>
+                         <img src="http://movie.shui.us{{x.cut}}" style='margin-top:20px' width="80px"/>
                      </td>
                     {% endif%}
                 </tr>
