@@ -4,7 +4,9 @@ from config import *
 from flask import Flask,render_template
 import utils
 from utils import *
-
+'''
+uwsgi --socket 127.0.0.1:3031 --file app.py --callable app --processes 2
+'''
 app = Flask(__name__)
 app.debug=True
 app.secret_key='@#$@#$DFFSWEFSDsdfasdfqew!312x1'
