@@ -180,4 +180,4 @@ def _user_login():
 
 Base.metadata.create_all(DB)
 db_session=sessionmaker(bind=DB)
-
+dbSession=db_session()
