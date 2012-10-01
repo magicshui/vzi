@@ -142,7 +142,7 @@ def route_movie_background_up(id):
 @app.route('/movie/<string:movie_id>/lines',methods=['POST'])
 def route_leave_a_line(movie_id):
     cut = request.files['cut']
-    if len(cut.filename)>3:
+    if cut:
         _line=Lines(content=request.form['content'],movie_id=movie_id,cut=cut.filename.split('.')[-1])
         _save_path=os.path.join(UPLOAD_FOLDER, _line.id+'.'+cut.filename.split('.')[-1])
         cut.save(_save_path)
