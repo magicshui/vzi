@@ -69,7 +69,7 @@ if THE_ENV=='aws':
     DATABASE_USER = 'ubuntu'
     DATABASE_PWD ='shuishui123'
     DATABASE_NAME= 'vzi'
-    DATABASE_HOST='http://aws-db-vzi.ctspojliopg8.us-west-2.rds.amazonaws.com'
+    DATABASE_HOST='aws-db-vzi.ctspojliopg8.us-west-2.rds.amazonaws.com'
     DATABASE_PORT='3306'
     UPLOAD_FOLDER='/home/ubuntu/pro/vzi/vzi/static/movie/'
     UPLOAD_FOLDER_BACK='/home/ubuntu/pro/vzi/vzi/static/back/'
