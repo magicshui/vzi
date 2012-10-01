@@ -164,5 +164,3 @@ def route_one_line(movie_id,id):
 def route_logout():
     session.clear()
     return redirect('/')
-if __name__ == "__main__":
-    app.run()
