@@ -58,7 +58,7 @@ sys.setdefaultencoding('utf8')
 
 THE_ENV = 'aws'
 
-if THE_ENV=='sys':
+if THE_ENV=='aws':
 
     Weibo_APP_KEY = '570026225'
     Weibo_APP_SECRET = '45ea1cae01eecda0e07a2b88a256d7a2'
