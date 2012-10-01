@@ -5,7 +5,6 @@ from flask import Flask,render_template
 import utils
 from utils import *
 
-
 app = Flask(__name__)
 app.debug=True
 app.secret_key='@#$@#$DFFSWEFSDsdfasdfqew!312x1'
@@ -50,6 +49,9 @@ def route_oauth_weibo():
     expires_in = r.expires_in
     client.set_access_token(access_token,expires_in)
     result=client.get.users__show(uid=r.uid)
+
+    dbSession=db_session()
+
     if 'name' in session and 'come' in session:
         return redirect('/')
     session['name']=result.name
@@ -57,7 +59,6 @@ def route_oauth_weibo():
     if not dbSession.query(User).filter(User.name==result.name).all():
         return redirect('/')
     _user= User(name=result.name,come='sina',avatar=result.profile_image_url)
-    dbSession=db_session()
     dbSession.add(_user)
     dbSession.commit()
     dbSession.flush()
