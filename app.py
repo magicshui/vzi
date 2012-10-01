@@ -129,10 +129,9 @@ def route_movie_background():
 @app.route('/movie/<string:id>/back',methods=['POST'])
 def route_movie_background_up(id):
     cut = request.files['back']
-    url_=s.put('backs', cut.filename, ob)
     movie=dbSession.query(Movie).filter(Movie.id==id).first()
-    _save_path=os.path.join(UPLOAD_FOLDER, movie.id+'.'+cut.filename.split('.')[-1])
-    movie.back=url_
+    _save_path=os.path.join(UPLOAD_FOLDER_BACK, movie.id+'.'+cut.filename.split('.')[-1])
+    movie.back="http://movie.shui.us/static/back/"+movie.id+'.'+cut.filename.split('.')[-1]
     dbSession.commit()
     return redirect('/movie/back')
      

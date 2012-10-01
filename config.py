@@ -71,7 +71,8 @@ if THE_ENV=='sys':
     DATABASE_NAME= 'vzi'
     DATABASE_HOST='http://aws-db-vzi.ctspojliopg8.us-west-2.rds.amazonaws.com'
     DATABASE_PORT='3306'
-    UPLOAD_FOLDER='/home/ubuntu/pro/vzi/static/movie/'
+    UPLOAD_FOLDER='/home/ubuntu/pro/vzi/vzi/static/movie/'
+    UPLOAD_FOLDER_BACK='/home/ubuntu/pro/vzi/vzi/static/back/'
     DB = create_engine('mysql://%s:%s@%s:%s/%s'% (DATABASE_USER,DATABASE_PWD,DATABASE_HOST,DATABASE_PORT,DATABASE_NAME),connect_args={'charset':'utf8'},echo=True,poolclass=NullPool)
 
 else:
