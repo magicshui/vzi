@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="Rightbar">
+    <div class="sep20"></div>
+
+
+    <div class="box" id="TopicsHot">
+        <div class="cell"><span class="fade">About Me</span></div>
+
+        <div class="cell ">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr>
+                    <td width="24" valign="middle" align="center">
+                        <a href="/member/{{session['name']}}"><img src="{{session['avatar']}}" class="avatar" border="0" align="default" auto=""></a>
+                    </td>
+                    <td width="10"></td>
+                    <td width="auto" valign="middle">
+                <span class="item_hot_topic_title">
+                <a href="/member/{{session['avatar']}}">{{session['name']}}</a>
+                </span>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+
+   
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      
+
+    </div>
+    <div class="sep20"></div>
+
+
+
+</div>
+<div id="Main">
+    
+<div class="sep20"></div>
+<div class="box">
+<div class="cell">
+    <span class="">没有你想找的电影？</span>
+</div>
+<div class="cell">
+    <form action='/' method='post'>
+        <span class='fade'>手动添加一下吧：http://movie.douban.com/subject/</span><input type="text" name='q'>
+    </form>
+    </div>
+</div>
+    <div class="sep20"></div>
+    <div class="box">
+{% for x in res%}
+            <div class="cell">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td width="80" valign="top" align="center"><a href="/movie/{{x.id}}"><img  width="80px" src="{{x.image}}" class="avatar" border="0" align="default" auto=""></a></td>
+                    <td width="10" valign="top"></td>
+                    <td width="auto" valign="top" align="left">
+                        
+                        <div class="sep3"></div>
+
+                        <div class="reply_content" style="font-size:13px;"><span style="font-size:36px;color:gray;">&ldquo;</span>
+                          <form action='/movie/{{x.id}}/back' method='POST' enctype=multipart/form-data>
+                          	<input type="file" name='back'>
+                                <input type="submit">
+                          </form>
+                        </div>
+                    </td>
+                    
+                </tr>
+                </tbody></table>
+        </div>
+       
+        {% endfor%}
+   </div>
+
+
+</div>
+<style type="text/css">
+    
+#Wrapper{
+    background:  url('http://vzius-movies.stor.sinaapp.com/p1465253485.jpg');
+background-size: cover;
+}
+</style>
+
+{% endblock%}
