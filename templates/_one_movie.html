@@ -1,0 +1,188 @@
+{% extends layout %}
+
+{% block body %}
+
+<div id="Rightbar">
+    <div class="sep20"></div>
+
+
+    <div class="box" id="TopicsHot">
+        <div class="cell"><span class="fade">本日热议主题</span></div>
+
+        <div class="cell from_16074">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr>
+                    <td width="24" valign="middle" align="center">
+                        <a href="/member/pieces"><img src="http://tb.v2ex.com/avatar/1d18/c59d/16074_mini.png?m=1336028818" class="avatar" border="0" align="default" auto=""></a>
+                    </td>
+                    <td width="10"></td>
+                    <td width="auto" valign="middle">
+                <span class="item_hot_topic_title">
+                <a href="/t/46961">有没有比wordpress更容易上手的博客系统</a>
+                </span>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+
+        <div class="cell from_19647">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr>
+                    <td width="24" valign="middle" align="center">
+                        <a href="/member/aloha007"><img src="http://tb.v2ex.com/avatar/a93c/7100/19647_mini.png?m=1335129276" class="avatar" border="0" align="default" auto=""></a>
+                    </td>
+                    <td width="10"></td>
+                    <td width="auto" valign="middle">
+                <span class="item_hot_topic_title">
+                <a href="/t/47012">关于iPhone 6的一些说明</a>
+                </span>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+
+        <div class="cell from_20464">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr>
+                    <td width="24" valign="middle" align="center">
+                        <a href="/member/regent"><img src="http://tb.v2ex.com/avatar/d2e2/2de3/20464_mini.png?m=1344483474" class="avatar" border="0" align="default" auto=""></a>
+                    </td>
+                    <td width="10"></td>
+                    <td width="auto" valign="middle">
+                <span class="item_hot_topic_title">
+                <a href="/t/47009">你们对诺基亚的新手机有什么感想？</a>
+                </span>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+
+
+        <div class="cell from_20464">
+            <form>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tbody><tr>
+                        <td>
+                            <textarea style="margin: 2px;height: 114px;width: 253px;"></textarea>
+                            <div class="sep5"></div>
+                            <input type="submit" value="回复" class="super normal button" style="float:right;">
+                        </td>     </td>
+
+                    </tbody></table>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            blocked = [];
+            $("#TopicsHot").children('.cell').each( function(index) {
+                for (i in blocked) {
+                    if ($(this).hasClass('from_' + blocked[i])) {
+                        $(this).css('display', 'none');
+                    }
+                }
+            });
+        </script>
+
+    </div>
+    <div class="sep20"></div>
+
+
+
+</div>
+<div id="Main">
+    <div class="sep20"></div>
+
+    <div class="box" id="movie">
+
+    </div>
+
+    <div class="sep20"></div>
+
+    <div class="box" id="lines">
+
+
+    </div>
+
+    <div class="sep20"></div>
+    <div class="box">
+        <div class="cell"><div class="fr"><a href="#"><strong>↑</strong> 回到顶部</a></div>
+            添加一条新回复
+        </div>
+        <div class="cell"><form method="post" action="/t/47050">
+            <textarea name="content" maxlength="10000" class="mll" id="reply_content"></textarea>
+            <div class="sep10"></div>
+            <div class="fr"><div class="sep5"></div></div>
+            <input type="submit" value="回复" class="super normal button"></form>
+        </div>
+        <div class="inner">
+            <div class="fr"><a href="/">← V2EX</a></div>
+            &nbsp;
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script type="text/x-handlebars" data-template-name="movie">
+
+    <div class="cell item" style="">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+            <tbody><tr>
+
+                <td width="100" height="150px" valign="top" align="center"><img src="/movie/image/{{image}}" class="avatar" border="0" align="default" auto=""></a></td>
+                <td width="10"></td>
+
+                <td width="auto" valign="top"><span class="item_title">{{title}}/{{alt_title}}</span>
+                    <div class="sep5"></div>
+                    <p>
+                        {{summary}}
+                    </p>
+                </td>
+
+            </tr>
+            </tbody></table>
+    </div>
+
+</script>
+
+
+
+<script type="text/x-handlebars" data-template-name='lines'>
+
+
+        {#list lines}
+        <div class="cell">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td width="48" valign="top" align="center"><img src="/avatar/{{avatar}}" class="avatar" border="0" align="default" auto=""></td>
+                    <td width="10" valign="top"></td>
+                    <td width="auto" valign="top" align="left">
+                        <div class="sep3"></div>
+                        <strong><a href="/member/{{name}}" class="dark">{{name}}</a></strong>&nbsp; &nbsp;<span class="fade small">{{crt_time}}</span>  &nbsp; <span class="small fade">♥ 1</span>
+                        <div class="sep5"></div>
+                        <div class="reply_content">{{content}}</div>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+        {/#lines}
+
+
+
+
+</script>
+
+{% endblock%}

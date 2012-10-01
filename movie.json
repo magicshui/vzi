@@ -1,0 +1,83 @@
+{
+    rating: {
+        max: 10,
+        average: "8.2",
+        numRaters: 95,
+        min: 0
+    },
+    author: [
+        {
+            name: "Tanwarin Sukkhapisit"
+        }
+    ],
+    alt_title: "会更好的",
+    image: "http://img1.douban.com/spic/s7043341.jpg",
+    title: "It Gets Better ไม่ได้ขอให้มารัก",
+    mobile_link: "http://m.douban.com/movie/subject/10439879/",
+    summary: "三段禁忌的爱情童话，一段是帅哥与人妖，一段是帅哥与帅哥，一段是和尚与和尚之间刻骨铭心的爱恋。",
+    attrs: {
+        language: [
+            "泰语"
+        ],
+        pubdate: [
+            "2012-02-14(泰国首映)"
+        ],
+        title: [
+            "It Gets Better ไม่ได้ขอให้มารัก"
+        ],
+        country: [
+            "泰国"
+        ],
+        director: [
+            "Tanwarin Sukkhapisit"
+        ],
+        cast: [
+            "Penpak Sirikul",
+            "Porama Imanothai",
+            "Panupong Waraeaksiri"
+        ],
+        year: [
+            "2012"
+        ],
+        movie_type: [
+            "剧情",
+            "同性"
+        ]
+    },
+    alt: "http://movie.douban.com/movie/10439879",
+    id: "http://api.douban.com/movie/10439879",
+    tags: [
+        {
+            count: 336,
+            name: "泰国电影"
+        },
+        {
+            count: 218,
+            name: "同志"
+        },
+        {
+            count: 188,
+            name: "泰国"
+        },
+        {
+            count: 124,
+            name: "爱情"
+        },
+        {
+            count: 95,
+            name: "同性"
+        },
+        {
+            count: 67,
+            name: "会更好的"
+        },
+        {
+            count: 66,
+            name: "BL"
+        },
+        {
+            count: 45,
+            name: "电影"
+        }
+    ]
+}

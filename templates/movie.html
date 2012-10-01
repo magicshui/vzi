@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="Rightbar">
+    <div class="sep20"></div>
+
+
+    <div class="box" id="TopicsHot">
+        <div class="cell"><a href="/"><span class="">Home</span></a></div>
+        
+        <div class="cell ">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr>
+                    <td width="24" valign="middle" align="center">
+                        <a href="/member/{{session['name']}}"><img src="{{session['avatar']}}" class="avatar" border="0" align="default" auto=""></a>
+                    </td>
+                    <td width="10"></td>
+                    <td width="auto" valign="middle">
+                <span class="item_hot_topic_title">
+                <a href="/member/{{session['avatar']}}">{{session['name']}}</a>
+                </span>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+
+   
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      
+
+    </div>
+    <div class="sep20"></div>
+
+
+
+</div>
+<div id="Main">
+    <div class="sep20"></div>
+
+    <div class="box" id="movie">
+            <div class="cell item" style="">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+            <tbody><tr>
+
+                <td width="100" height="150px" valign="top" align="center"><img src="{{movie.image}}" class="avatar" border="0" align="default" auto=""></a></td>
+                <td width="10"></td>
+
+                <td width="auto" valign="top"><span class="item_title">{{movie.title}}/{{movie.alt_title}}</span>
+                    <div class="sep5"></div>
+                    <div>
+                        <p>{{movie.summary}}</p>
+                    </div>
+                </td>
+
+            </tr>
+            </tbody></table>
+    </div>
+<div class="topic_buttons"><div class="fr gray f11" style="line-height: 12px; padding-top: 3px; text-shadow: 0px 1px 0px #fff;"> &nbsp; </div> &nbsp;<div id="topic_thank"><a href="{{movie.alt.replace('movie/','subject/')}}"  class="tb">去豆瓣查看</a></div></div>
+
+    </div>
+
+
+    <div class="sep20"></div>
+
+    <div class="box" id="lines">
+        {% for x in lines%}
+            <div class="cell">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody>
+                <tr>
+                    <td width="20" valign="top" align="center"><!--<img  width="20px" src="{{x.avatar}}" class="avatar" border="0" align="default" auto="">--></td>
+                    <td width="10" valign="top"></td>
+                    <td width="auto" valign="top" align="left">
+                        <div class="fr">
+                            <div id="thank_area_420434" class="thank_area">
+                                <a  href="javascript:show_weibo('/movie/{{x.movie_id}}', '{{x.content}}----《{{movie.title}}》',{%if x.cut%}'{{movie.cut}}'{%else%}{{movie.image}}{%endif%});" class="thank">转发到新浪微博</a>
+                                <a href="/movie/{{x.movie_id}}/lines/{{x.id}}">分享</a>
+                            </div>
+                        </div>
+                        <div class="sep3"></div>
+                        <strong><img  width="13px" src="{{x.avatar}}" class="avatar" border="0" align="default" auto="">&nbsp; &nbsp;<a href="/member/{{x.name}}" class="dark">{{x.name}}</a></strong>&nbsp; &nbsp;<span class="fade small">{{x.crt_time}}</span>  
+                        <div class="sep5"></div>
+                        <div class="reply_content" style="font-size:13px;"><span style="font-size:36px;color:gray;">&ldquo;</span>{{x.content | safe}}</div>
+                    </td>
+                    {% if x.cut %}
+                     <td width="80" valign="top" >
+                         
+                         <img src="{{x.cut}}" style='margin-top:20px' width="80px"/>
+                     </td>
+                    {% endif%}
+                </tr>
+                </tbody></table>
+        </div>
+       
+        {% endfor%}
+
+    </div>
+
+    <div class="sep20"></div>
+    <div class="box">
+        <div class="cell"><div class="fr"><a href="#"><strong>↑</strong> 回到顶部</a></div>
+            添加一句新的台词
+        </div>
+        <div class="cell"><form method="post" action="/movie/{{movie.id}}/lines" enctype=multipart/form-data>
+            <textarea name="content" maxlength="10000" class="mll" id="reply_content"></textarea>
+            <div class="sep10"></div>
+            <input type="file" name="cut">
+            <div class="fr"><div class="sep5"></div></div>
+            <input type="submit" value="回复" class="super normal button"></form>
+        </div>
+        
+    </div>
+
+
+
+</div>
+<style type="text/css">
+    
+#Wrapper{
+    background:  url('http://vzius-movies.stor.sinaapp.com/p1465253485.jpg');
+background-size: cover;
+}
+</style>
+
+{% endblock%}
