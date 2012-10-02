@@ -89,7 +89,6 @@ def _get_movie_from_douban(id):
         image=data['image'].replace('',''),alt=data['alt'],summary=data['summary'])
         return movie
     except Exception,e:
-        raise
         return None
         
         
@@ -97,6 +96,7 @@ def _get_movie_from_douban(id):
 def route_search():
     _q=request.form['q']
     dbSession=db_session()
+
     if not dbSession.query(Movie).filter(Movie.id==_q).all():
         movie=_get_movie_from_douban(_q)
         if movie!=None:
