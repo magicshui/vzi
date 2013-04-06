@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
 <div id="Rightbar">
     <div class="sep20"></div>
 
@@ -31,16 +30,6 @@
       
 
 
-
-
-
-
-
-
-
-
-      
-
     </div>
     <div class="sep20"></div>
 
@@ -68,7 +57,7 @@
             </tr>
             </tbody></table>
     </div>
-<div class="topic_buttons"><div class="fr gray f11" style="line-height: 12px; padding-top: 3px; text-shadow: 0px 1px 0px #fff;"> &nbsp; </div> &nbsp;<div id="topic_thank"><a href="{{movie.alt.replace('movie/','subject/')}}"  class="tb">去豆瓣查看</a></div></div>
+<div class="topic_buttons"><div class="fr gray f11" style="line-height: 12px; padding-top: 3px; text-shadow: 0px 1px 0px #fff;"> &nbsp; </div> &nbsp;<div id="topic_thank"><a href=""  class="tb">去豆瓣查看</a></div></div>
 
     </div>
 
@@ -76,36 +65,27 @@
     <div class="sep20"></div>
 
     <div class="box" id="lines">
-        {% for x in lines%}
-            <div class="cell">
-            <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                <tbody>
-                <tr>
-                    <td width="20" valign="top" align="center"><!--<img  width="20px" src="{{x.avatar}}" class="avatar" border="0" align="default" auto="">--></td>
-                    <td width="10" valign="top"></td>
-                    <td width="auto" valign="top" align="left">
-                        <div class="fr">
-                            <div id="thank_area_420434" class="thank_area">
-                                <a  href="javascript:show_weibo('http://movie.shui.us/movie/{{x.movie_id}}', '{{x.content.replace(' ','')}}----《{{movie.title}}》',{%if x.cut%}'{{movie.cut}}'{%else%}'{{movie.image}}'{%endif%});" class="thank">转发到新浪微博</a>
-                                <a href="/movie/{{x.movie_id}}/lines/{{x.id}}">分享</a>
-                            </div>
-                        </div>
-                        <div class="sep3"></div>
-                        <strong><img  width="13px" src="{{x.avatar}}" class="avatar" border="0" align="default" auto="">&nbsp; &nbsp;<a href="/member/{{x.name}}" class="dark">{{x.name}}</a></strong>&nbsp; &nbsp;<span class="fade small">{{x.crt_time}}</span>  
-                        <div class="sep5"></div>
-                        <div class="reply_content" style="font-size:13px;"><span style="font-size:36px;color:gray;">&ldquo;</span>{{x.content | safe}}</div>
-                    </td>
-                    {% if x.cut %}
-                     <td width="80" valign="top" >
-                         
-                         <img src="http://movie.shui.us{{x.cut}}" style='margin-top:20px' width="80px"/>
-                     </td>
-                    {% endif%}
-                </tr>
-                </tbody></table>
-        </div>
        
-        {% endfor%}
+                
+              <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                 
+                 {% for x in lines %}
+                  <div class="item  ">
+                    
+                    <div class="carousel-caption">
+                      
+                      <p>{{x.content}}</p>
+                    </div>
+                  </div>
+{% endfor%}
+
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+              </div>
+            
+           
 
     </div>
 
@@ -127,6 +107,13 @@
 
 
 </div>
+ <script>
+                $(document).ready(function(){
+                        $('.carousel').Carousel({
+  interval: 2000
+});
+                });
+            </script>
 <style type="text/css">
     
 #Wrapper{

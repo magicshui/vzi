@@ -55,7 +55,7 @@ from douban_client import *
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-THE_ENV = 'aws'
+THE_ENV = 'nav'
 
 if THE_ENV=='aws':
 

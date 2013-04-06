@@ -1,0 +1,96 @@
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+  <title>Quotes on Changemakrs.com</title>
+  <meta name="description" content="Collect your most inspiring quotes in one place.">
+  <meta name="author" content="">
+  <meta name="robots" content="noodp">
+  <link rel="apple-touch-icon" href="/icons/apple_touch_icon.png">
+
+  <link href="/static/css/shared.css" media="all" rel="stylesheet" type="text/css">
+
+ </head>
+<body screen_capture_injected="true">
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px; "></div></div>
+
+<nav class="nav">
+  <div class="frame">
+        <ul class="user_global_actions">
+          <li>
+            <a href="/"><span class="pictos_btn">H</span>Home</a>
+          </li>
+          <li>
+            <a href="/discover"><span class="pictos_btn">G</span>Discover</a>
+          </li>
+          <li>
+            <span class="pictos_btn">s</span>
+            <span id="search_box_spinner"></span>
+            <input type="text" id="search_box" placeholder="Search">
+          </li>
+        </ul>
+
+        <ul class="user_controls sign_on_controls">
+          <li>
+            <a href="http://blog.changemakrs.com">About</a>
+          </li>
+          <li>
+            <a href="/users/sign_in">Sign in</a>
+          </li>
+          <li>
+            <a href="http://join.changemakrs.com">Request Invite</a>
+          </li>
+        </ul>
+  </div>
+</nav>
+
+<div id="search_container">
+</div>
+
+<div class="main">
+  <section class="dialog">
+    <header id="sign_on_box">
+      <h1><a href="http://changemakrs.com">Change<span>makrs.com</span></a></h1>
+    </header>
+
+    <div class="thick_line"></div>
+
+    <h2 id="tag_line">Collect your most<br>inspiring quotes<br>in one place.</h2>
+
+
+    <section class="discovery_box">
+          
+
+        {% for x in movie%}
+
+
+<div class="cell item" style="border-top-left-radius: 3px; border-top-right-radius: 3px;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tbody><tr>
+            
+            <td width="48" valign="top" align="center"><a href="/member/sophy"><img src="{{x.Movie.image}}" class="avatar" border="0" align="default" auto=""></a></td>
+            <td width="10"></td>
+            
+            <td width="auto" valign="middle"><span class="item_title"><a href="/t/49153#reply18">
+                "{{x.Lines.content}}"《{{x.Movie.title}}》
+            </a></span>
+            <div class="sep5"></div>
+            
+            </td>
+            
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+        {% endfor%}
+
+
+    </section>
+  </section>
+</div>
+
+
+<div id="bg_image" class="bg_image " style="background-image: url('http://cdn.changemakrs.com/users/505cc243f616600007000007/background/1349253506.desktop.png?1349253506');" onclick=""></div>
+</body></html>

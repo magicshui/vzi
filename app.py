@@ -72,9 +72,8 @@ def route_oauth_weibo():
 def route_index():
     if 'name' in session and 'come' in session:
         dbSession=db_session()
-        movie=dbSession.query(Movie,Lines).filter(Movie.id==Lines.movie_id).order_by(func.rand()).first()
-        dbSession.flush()
-        return render_template('index.html',movie=movie)
+        movie=dbSession.query(Movie,Lines).filter(Movie.id==Lines.movie_id).order_by(func.rand()).limit(3).all()
+        return render_template('index.html',movies=movie)
     
     return redirect('/oauth')
     
@@ -120,7 +119,7 @@ def route_get_movie_with_id(id):
     dbSession=db_session()
     movie=dbSession.query(Movie).filter(Movie.id==id).first()
     lines=dbSession.query(Lines).filter(Lines.movie_id==id).all()
-    dbSession.flush()
+   
     return render_template('movie.html',movie=movie,lines=lines)
 
 @app.route('/movie/back',methods=['GET'])

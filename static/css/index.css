@@ -1,0 +1,2026 @@
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+textarea {
+    resize: none
+}
+
+textarea:focus {
+    outline: none
+}
+
+input:focus {
+    outline: none
+}
+
+.cleaner {
+    clear: both;
+    font-size: 1px
+}
+
+@font-face {
+    font-family:'ArgumentumRegular';src:url("http://cdn.changemakrs.com/assets/Argumentum-Regular-webfont-7a4a0e7c4f7e9783162b78aaf2e499c5.eot");src:url("http://cdn.changemakrs.com/assets/Argumentum-Regular-webfont-7a4a0e7c4f7e9783162b78aaf2e499c5.eot?#iefix") format("embedded-opentype"),url("http://cdn.changemakrs.com/assets/Argumentum-Regular-webfont-e7accd47900f37dd862ff787abbe43a3.woff") format("woff"),url("http://cdn.changemakrs.com/assets/Argumentum-Regular-webfont-717567df6f785223f9731bb763bcb8ae.ttf") format("truetype"),url("http://cdn.changemakrs.com/assets/Argumentum-Regular-webfont-5fcf0c333c9a98fad9e88f966ce8fddd.svg#ArgumentumRegular") format("svg");font-weight:normal;font-style:normal
+}
+
+@font-face {
+    font-family:'ArgumentumMediumRegular';src:url("http://cdn.changemakrs.com/assets/Argumentum-Medium-webfont-b50a2ce415d81404e1aa14509f40e90a.eot");src:url("http://cdn.changemakrs.com/assets/Argumentum-Medium-webfont-b50a2ce415d81404e1aa14509f40e90a.eot?#iefix") format("embedded-opentype"),url("http://cdn.changemakrs.com/assets/Argumentum-Medium-webfont-3ac18253af93458e384809a3c1e0419a.woff") format("woff"),url("http://cdn.changemakrs.com/assets/Argumentum-Medium-webfont-cc3abb57a3908261ade274e41787bc48.ttf") format("truetype"),url("http://cdn.changemakrs.com/assets/Argumentum-Medium-webfont-aa35cd8d154525db6428806aeab100bf.svg#ArgumentumMediumRegular") format("svg");font-weight:normal;font-style:normal
+}
+
+@font-face {
+    font-family:'Pictos';src:url("http://cdn.changemakrs.com/assets/pictos-web-9d3c221e8c192b540368bd6c34d71f98.eot");src:url("http://cdn.changemakrs.com/assets/pictos-web-9d3c221e8c192b540368bd6c34d71f98.eot?#iefix") format("embedded-opentype"),url("http://cdn.changemakrs.com/assets/pictos-web-becc4874b3acf19561aa1f3081f90b8d.woff") format("woff"),url("http://cdn.changemakrs.com/assets/pictos-web-e3272b62c7ef8afa16771dce470d17c4.ttf") format("truetype"),url("http://cdn.changemakrs.com/assets/pictos-web-7b9549d9df35d62532bd43157200198e.svg#webfontIyfZbseF") format("svg");font-weight:normal;font-style:normal
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline
+}
+
+textarea {
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif
+}
+
+input {
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif
+}
+
+.yellow {
+    color: #f5ed5d
+}
+
+.yellow_btn {
+    height: 21px;
+    font-size: 15px;
+    background-color: #f5ed5d;
+    color: #000000;
+    padding: 3px 15px 1px;
+    text-decoration: none;
+    border: 0
+}
+
+.yellow_btn:hover {
+    text-decoration: none
+}
+
+.default_submit_btn {
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif;
+    font-size: 15px;
+    background-color: #fced62;
+    color: #1b1919;
+    padding: 4px 23px 2px 23px;
+    text-decoration: none;
+    border: solid 1px #c6bb54;
+    border-radius: 3px;
+    margin-left: 0
+}
+
+.default_submit_btn:hover {
+    color: #ffffff
+}
+
+.white_btn {
+    padding: 3px 9px 1px 9px;
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #8b8991;
+    color: black;
+    font-size: 14px
+}
+
+.white_btn:hover {
+    color: black;
+    text-decoration: none
+}
+
+.reveal-modal {
+    background-color: white !important;
+    color: black;
+    font-size: 13px;
+    width: 400px !important;
+    margin-left: -200px !important
+}
+
+.reveal-modal h1 {
+    font-size: 48px;
+    margin-bottom: 10px
+}
+
+.reveal-modal form {
+    margin-top: 20px
+}
+
+.reveal-modal .modal_input {
+    border-radius: 3px !important;
+    border: solid 1px black !important;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px 0 20px 0
+}
+
+.reveal-modal .modal_submit_btn {
+    border: none !important
+}
+
+.listview li {
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: top
+}
+
+.listview a {
+    display: block;
+    height: 173px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: black
+}
+
+.listview a:hover {
+    background-color: white;
+    text-decoration: none
+}
+
+.listview img {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.listview .content {
+    background-color: white;
+    width: 192px;
+    height: 58px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -3px;
+    color: black;
+    padding: 9px 14px 15px 14px
+}
+
+.listview .arrow_up {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    position: absolute;
+    margin-top: -15px
+}
+
+.listview h3 {
+    font-size: 14px;
+    line-height: 16px
+}
+
+.listview h4 {
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.block_list ul {
+    margin-top: 20px;
+    width: 972px
+}
+
+.bg_image {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50%;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    -ms-filter: progid:dximagetransform.microsoft.blur(pixelradius=2px)
+}
+
+.blur_more {
+    -webkit-filter: blur(5px);
+    -ms-filter: progid:dximagetransform.microsoft.blur(pixelradius=5px)
+}
+
+.main section {
+    width: 960px;
+    margin: 0 auto 0 auto;
+    padding-top: 70px
+}
+
+header h1 {
+    display: inline;
+    font-size: 31px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin-left: 0;
+    background-image: url("http://cdn.changemakrs.com/assets/logo_22px-c55c0714aa9db9736519f561c0e33cc6.png");
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 0 5px
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    header h1 {
+        background-image: url("http://cdn.changemakrs.com/assets/logo_22px@2x-743b0493c55c9eca02b3fe99c5b7e3a4.png")
+    }
+}
+
+header h1 a {
+    text-decoration: none !important
+}
+
+header h1 span {
+    color: #fff14b
+}
+
+header aside {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-top: 11px
+}
+
+.thick_line {
+    display: block;
+    background-color: #ffffff;
+    height: 7px;
+    width: 100%
+}
+
+.thin_line {
+    display: block;
+    background-color: #ffffff;
+    height: 2px;
+    width: 100%
+}
+
+.main #tag_line {
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 95px;
+    margin-top: 12px
+}
+
+.main .sub_line {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 10px
+}
+
+.main .sub_line a {
+    color: #fff14b
+}
+
+.main .sub_line a:hover {
+    text-decoration: underline
+}
+
+nav {
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-size: 14px;
+    height: 35px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.4)
+}
+
+nav>.frame {
+    width: 960px;
+    margin: 0 auto 0 auto
+}
+
+nav a:hover {
+    text-decoration: none
+}
+
+nav>div>ul>li {
+    display: inline-block;
+    height: 28px;
+    padding: 7px 0 0 0
+}
+
+nav .user_global_actions {
+    float: left
+}
+
+nav .user_global_actions li {
+    margin-right: 30px;
+    margin-top: 5px
+}
+
+nav .user_global_actions li:last-child {
+    margin-top: 0 !important
+}
+
+nav .user_global_actions #search_box {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    width: 135px;
+    color: white
+}
+
+nav #search_box_spinner {
+    display: inline !important
+}
+
+nav .spinner {
+    background-color: #ff0000;
+    display: inline !important;
+    left: 225px !important;
+    top: 5px !important
+}
+
+#search_box::-webkit-input-placeholder {
+    color: white
+}
+
+#search_box:-moz-placeholder {
+    color: white
+}
+
+nav .user_controls {
+    float: right
+}
+
+nav .user_controls .user_profile_btn {
+    vertical-align: 15px;
+    display: inline-block;
+    margin: 4px 0 0 0;
+    width: 180px;
+    text-align: right;
+    padding-right: 22px
+}
+
+nav .user_profile_btn .arrow_down {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid white;
+    display: inline;
+    margin: 0 0 0 8px;
+    vertical-align: -9px
+}
+
+nav .sign_on_controls li {
+    margin-left: 30px
+}
+
+nav .sign_on_controls {
+    margin-top: 5px
+}
+
+nav .create_quote_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/nav-add-quote-352c5af9233c2fc4b0fefbb3a7f69d57.png");
+    background-repeat: no-repeat;
+    background-size: 21px 42px;
+    background-position: 0 0;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin: 0 0 0 15px;
+    vertical-align: 15px
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    nav .create_quote_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/nav-add-quote@2x-51cca4790a93e48e2892cadda14055bc.png")
+    }
+}
+
+nav .create_quote_btn:hover {
+    background-position: 0 -21px
+}
+
+nav #user_settings_dropdown {
+    background-color: white;
+    display: none;
+    padding-bottom: 10px;
+    line-height: 16px;
+    margin-top: -5px
+}
+
+nav #user_settings_dropdown .grey_line {
+    background-color: #CCCCCC;
+    display: block;
+    width: 80%;
+    height: 1px;
+    float: none;
+    margin: 0 auto 10px auto
+}
+
+nav #user_settings_dropdown li {
+    display: block;
+    padding: 2px 15px 2px 15px
+}
+
+nav #user_settings_dropdown li:first-child {
+    padding: 15px 15px 30px 15px !important;
+    height: 20px
+}
+
+nav #user_settings_dropdown li:hover {
+    background-color: #CCFFFF
+}
+
+nav #user_settings_dropdown a {
+    color: black !important;
+    padding: 5px
+}
+
+nav .settings_list_item a {
+    display: block
+}
+
+nav #user_settings_dropdown div {
+    width: 130px;
+    float: right
+}
+
+nav #user_settings_dropdown img {
+    border: solid 1px black;
+    background-color: #000000
+}
+
+nav .pictos_btn {
+    font-family: 'Pictos';
+    font-size: 12px;
+    margin: 0 5px 0 0;
+    vertical-align: 1px !important
+}
+
+#social_bar {
+    position: absolute;
+    width: 100%;
+    top: 800px;
+    display: none
+}
+
+#share_area {
+    width: 960px;
+    position: absolute;
+    left: 50%;
+    margin-left: -480px
+}
+
+#share_area ul {
+    margin-top: 10px;
+    list-style: none;
+    height: 30px
+}
+
+#share_area ul li {
+    display: inline
+}
+
+.social_btns {
+    float: left
+}
+
+.footer_links {
+    float: right;
+    font-size: 13px;
+    font-family: 'ArgumentumRegular', arial, sans-serif
+}
+
+.footer_links>li {
+    margin-left: 10px
+}
+
+#share_area .pinterest_share {
+    vertical-align: 13px
+}
+
+#share_area .twitter_share iframe {
+    vertical-align: 13px;
+    margin-right: 20px
+}
+
+#share_area .twitter_follow iframe {
+    vertical-align: 13px;
+    margin-right: 60px
+}
+
+#share_area .fb_like_btn {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: 17px
+}
+
+#search_container {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 38px;
+    background-color: rgba(0,0,0,0.4);
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+#cancel_search_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/search-cancel-3b065181ca7777f8d2fb9190d71b95b0.png");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 0 0;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: right;
+    margin: 10px 4px 0 0
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    #cancel_search_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/search-cancel@2x-3b065181ca7777f8d2fb9190d71b95b0.png")
+    }
+}
+
+#search_dialog {
+    width: 960px;
+    margin: 0 auto 0 auto
+}
+
+#search_dialog h1 {
+    font-size: 99px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    margin-top: 10px;
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif;
+    display: initial
+}
+
+.search_results {
+    padding-top: 85px
+}
+
+.search_results>li {
+    display: inline-block;
+    width: 220px;
+    padding-right: 20px;
+    vertical-align: top
+}
+
+.search_results>li:last-child {
+    padding-right: 0 !important
+}
+
+.search_results h2 {
+    display: inline
+}
+
+.search_results .quotes_count_info {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 12px;
+    display: inline
+}
+
+.search_results .see_all_btn {
+    display: inline;
+    float: right;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 12px;
+    margin-top: 3px
+}
+
+.search_results .see_all_btn:after {
+    content: " >"
+}
+
+.search_result_thick_line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    margin: 3px 0 23px 0
+}
+
+.quote_results h2 {
+    background-image: url("http://cdn.changemakrs.com/assets/quote-it-icon14x12-white-de7ae9ef2d71850f751a66bcb1fc5f6f.png");
+    background-size: 14px 12px;
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    padding-left: 19px;
+    line-height: 17px
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .quote_results h2 {
+        background-image: url("http://cdn.changemakrs.com/assets/quote-it-icon14x12-white@2x-f89e0449f98d6c01d1d8de1b72a7a12c.png")
+    }
+}
+
+.quote_results ul li {
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    border-bottom-color: rgba(255,255,255,0.3);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px
+}
+
+.quote_results ul li>a:hover {
+    text-decoration: none
+}
+
+.quote_results h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 21px
+}
+
+.quote_results img {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white
+}
+
+.quote_results span {
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 7px
+}
+
+.user_results h2:before {
+    content: "U";
+    font-family: 'Pictos';
+    margin-right: 5px
+}
+
+.user_results ul li {
+    padding-bottom: 20px
+}
+
+.user_results ul li>a:hover {
+    text-decoration: none
+}
+
+.user_results img {
+    width: 55px;
+    height: 55px;
+    border: 1px solid white;
+    vertical-align: bottom
+}
+
+.user_results ul li div {
+    display: inline-block;
+    margin-left: 12px
+}
+
+.user_results h3 {
+    font-size: 20px;
+    width: 147px
+}
+
+.user_results p {
+    font-size: 12px;
+    background-image: url("http://cdn.changemakrs.com/assets/quote-it-icon12x10-91b68baef49a282aade5f8f9981786c5.png");
+    background-size: 12px 20px;
+    background-position: 0 -10px;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin-top: 5px
+}
+
+.category_results h2:before {
+    content: "g";
+    font-family: 'Pictos';
+    margin-right: 5px
+}
+
+.category_results ul li {
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    border-bottom-color: rgba(255,255,255,0.3);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    font-size: 18px
+}
+
+.category_results ul li>a:hover {
+    text-decoration: none
+}
+
+.favorite_results h2:before {
+    content: "S";
+    font-family: 'Pictos';
+    margin-right: 5px
+}
+
+.favorite_results ul li {
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    border-bottom-color: rgba(255,255,255,0.3);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px
+}
+
+.favorite_results ul li>a:hover {
+    text-decoration: none
+}
+
+.favorite_results h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 21px
+}
+
+.favorite_results img {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white
+}
+
+.favorite_results span {
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 7px
+}
+
+.no_search_result {
+    padding-top: 46px
+}
+
+.no_search_result>section {
+    padding-left: 194px;
+    margin-top: 6px
+}
+
+.no_search_result img {
+    float: left
+}
+
+.no_search_result h2 {
+    font-size: 50px;
+    padding-top: 22px;
+    margin-bottom: 25px;
+    line-height: 61px;
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif
+}
+
+.no_search_result p {
+    font-size: 23px;
+    line-height: 30px;
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif
+}
+
+.no_search_result ul {
+    margin-top: 25px;
+    font-size: 12px
+}
+
+.no_search_result li {
+    margin-bottom: 6px
+}
+
+.discovery_box {
+    position: absolute;
+    bottom: 30px
+}
+
+.discovery_box p {
+    margin-bottom: 20px
+}
+
+.discovery_box .listview {
+    display: inline
+}
+
+.discovery_box .discover_more_btn {
+    font-size: 35px;
+    text-align: right;
+    display: inline-block;
+    margin: 44px 0 0 20px;
+    background-image: url("/assets/next_sprite.png");
+    background-repeat: no-repeat;
+    background-size: 62px 132px;
+    background-position: 140px 4px;
+    padding-right: 75px;
+    width: 128px
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .discovery_box .discover_more_btn {
+        background-image: url("/assets/next_sprite@2x.png")
+    }
+}
+
+.discovery_box .discover_more_btn:hover {
+    text-decoration: none;
+    color: #fced62;
+    background-position: 140px -67px
+}
+
+#sign_on_box {
+    margin: 0 0 30px 0
+}
+
+#sign_on_box input {
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif;
+    border-radius: 5px;
+    border: 0;
+    height: 32px;
+    margin-left: 6px;
+    margin-top: -1px
+}
+
+#sign_on_box .sign_on_input {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0 6px 0 6px;
+    display: inline
+}
+
+.sign_in,.sign_up,.reset_password {
+    float: right
+}
+
+.sign_in>.sign_on_input {
+    width: 200px
+}
+
+.sign_up>.sign_on_input {
+    width: 158px
+}
+
+.sign_in .sign_on_input {
+    width: 200px
+}
+
+.reset_password .sign_on_input {
+    width: 300px
+}
+
+#sign_on_box input[type="submit"] {
+    font-size: 28px;
+    width: 50px;
+    background-color: #f5ed5d;
+    color: #000000;
+    padding: 0 0 5px 0;
+    vertical-align: -3px
+}
+
+#sign_on_box .sign_on_links {
+    float: right
+}
+
+#sign_on_box .sign_on_links a {
+    margin: 0 0 0 10px
+}
+
+.error {
+    color: #ff0000;
+    margin-top: 20px
+}
+
+.field_with_errors {
+    display: inline
+}
+
+#error_explanation {
+    color: #eb1c24;
+    margin: 20px 0 0 0
+}
+
+#signup_user .sign_up_popup {
+    width: 290px;
+    margin: 115px auto 0 auto;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 25px 25px 11px 25px;
+    display: block
+}
+
+#signup_user .invalid_input {
+    border: solid 1px #eb1c24 !important
+}
+
+#signup_user .input_spinner_container {
+    margin-left: 274px;
+    margin-top: -40px;
+    position: absolute
+}
+
+#signup_user .signup_next_btn {
+    background-color: white;
+    width: 246px;
+    display: block;
+    text-align: center;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-size: 21px;
+    border-radius: 3px;
+    border: none;
+    padding: 9px 22px 8px 22px;
+    margin: 20px 0 0 0;
+    background-image: url("http://cdn.changemakrs.com/assets/next_small-b8da9bc829d3cd20197a2d45dcdb9e5b.png");
+    background-position: 260px 11px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    color: black
+}
+
+#signup_user .signup_next_btn:hover {
+    color: black;
+    text-decoration: none
+}
+
+#signup_user .signup_step {
+    margin: 8px auto 0 auto;
+    width: 26px
+}
+
+#signup_user .signup_step li {
+    display: inline-block
+}
+
+#signup_user .signup_step li {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.4)
+}
+
+#signup_user .signup_step .active {
+    background-color: white !important
+}
+
+#signup_user .signup_options_info {
+    position: absolute;
+    margin: -75px auto 0 auto;
+    width: 290px;
+    text-align: center;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    line-height: 20px
+}
+
+#signup_user #error_explanation {
+    position: absolute;
+    margin: -130px auto 0 auto;
+    width: 290px;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    line-height: 20px
+}
+
+#signup_user .signup_options .thin_line {
+    display: inline-block;
+    height: 1px;
+    width: 131px;
+    background-color: white;
+    margin: 0 0 5px 0
+}
+
+#signup_user .signup_options li {
+    margin-bottom: 15px;
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+#signup_user .signup_options a {
+    background-size: 24px 24px;
+    background-position: 12px 8px;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 5px;
+    padding: 11px 0 7px 52px;
+    font-size: 22px
+}
+
+#signup_user .signup_options a:hover {
+    text-decoration: none
+}
+
+#signup_user .signup_options .facebook_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_24-6c9ff7759c7df03da1191bded68cbf33.png");
+    background-color: #425b93
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    #signup_user .signup_options .facebook_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_24@2x-7fe6ea0fcac490a9ff63a11257e532e1.png")
+    }
+}
+
+#signup_user .signup_options .facebook_btn:hover {
+    background-color: #003366
+}
+
+#signup_user .signup_options .twitter_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_391_twitter_24-4e28e490e5b22eb10217985b2a3684a6.png");
+    background-color: #4ea8e6
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    #signup_user .signup_options .twitter_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_391_twitter_24@2x-4dc0ec4d201182bb6bf9cdff79d5f51b.png")
+    }
+}
+
+#signup_user .signup_options .twitter_btn:hover {
+    background-color: #0099cc
+}
+
+#signup_user .signup_options .signup_btn {
+    background-color: white;
+    color: black;
+    margin-bottom: 25px
+}
+
+#signup_user .signup_options .signup_btn:hover {
+    background-color: #fff14b
+}
+
+#signup_user .signup_form .user_validator_msg {
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-size: 12px;
+    margin: -16px 0 0 0;
+    position: absolute;
+    display: none
+}
+
+#signup_user .signup_form .user_validator_msg span {
+    font-family: 'Pictos';
+    color: #eb1c24;
+    margin-right: 5px
+}
+
+#signup_user .signup_form .sign_up_input {
+    background-color: transparent;
+    color: white;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-size: 21px;
+    padding: 10px 22px 7px 22px;
+    margin: 0px 0 20px 0;
+    border-radius: 3px;
+    border: solid 1px white;
+    width: 242px
+}
+
+#signup_user .sign_up_next_btn {
+    background-color: white;
+    width: 100%;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-size: 21px;
+    border-radius: 3px;
+    border: none;
+    padding: 9px 22px 8px 22px;
+    margin: 10px 0 0px 0;
+    background-image: url("http://cdn.changemakrs.com/assets/next_small-b8da9bc829d3cd20197a2d45dcdb9e5b.png");
+    background-position: 260px 11px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat
+}
+
+#signup_user .sign_up_next_btn:hover {
+    cursor: pointer
+}
+
+#signup_user .signup_photo_info {
+    margin: -56px auto 40px auto;
+    text-align: center
+}
+
+#signup_user .signup_photo_form {
+    height: 320px
+}
+
+#signup_user .signup_photo_form .photo_frame {
+    height: 140px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+    padding-top: 100px
+}
+
+#signup_user .signup_photo_form .cabinet {
+    width: 128px;
+    height: 20px;
+    padding: 10px 18px 10px 18px;
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #8b8991;
+    color: black;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 auto 0 auto;
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+#signup_user .signup_photo_form .cabinet input {
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+#signup_user .signup_photo_form .spinner_container {
+    margin-left: 143px;
+    margin-top: -90px;
+    position: absolute
+}
+
+#signup_user .signup_networks_info {
+    margin: -56px auto 40px auto;
+    text-align: center
+}
+
+.social_networks_form li {
+    margin-bottom: 10px
+}
+
+.social_networks_form a {
+    background-color: rgba(255,255,255,0.4);
+    background-size: 16px 16px;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 5px;
+    padding: 11px 0 7px 52px;
+    font-size: 22px;
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+.social_networks_form .facebook_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color-65d7850ba4ff9c4d8e517462e011b713.png");
+    color: #425b94
+}
+
+.social_networks_form .twitter_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color-69c96e21c44f6b7a116e9968a04ce0d9.png");
+    color: #4ea9e7
+}
+
+.social_networks_form .linkedin_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color-e4a9130e9c059f0440e51567ab5568ea.png");
+    color: #2b6cf9
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .facebook_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color@2x-bc53ed36b7896950ac2b7c32f450586c.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .twitter_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color@2x-56eeb2d88de0bc42ea441f4c82995e51.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .linkedin_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color@2x-f895568e654f44dd2db22daa2643dc00.png")
+    }
+}
+
+.social_networks_form .facebook_connected_btn {
+    color: #425b94;
+    background-color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color-65d7850ba4ff9c4d8e517462e011b713.png")
+}
+
+.social_networks_form .twitter_connected_btn {
+    color: #4ea9e7;
+    background-color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color-69c96e21c44f6b7a116e9968a04ce0d9.png")
+}
+
+.social_networks_form .linkedin_connected_btn {
+    color: #2b6cf9;
+    background-color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color-e4a9130e9c059f0440e51567ab5568ea.png")
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .facebook_connected_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color@2x-bc53ed36b7896950ac2b7c32f450586c.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .twitter_connected_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color@2x-56eeb2d88de0bc42ea441f4c82995e51.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .linkedin_connected_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color@2x-f895568e654f44dd2db22daa2643dc00.png")
+    }
+}
+
+.social_networks_form .facebook_connected_btn:hover {
+    background-color: #2b6cf9 !important;
+    color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook-251701bde81a4cd154f1ae79ab0e9f24.png")
+}
+
+.social_networks_form .twitter_connected_btn:hover {
+    background-color: #2b6cf9 !important;
+    color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter-9907a2c52028ee5239de1247e120898e.png")
+}
+
+.social_networks_form .linkedin_connected_btn:hover {
+    background-color: #2b6cf9 !important;
+    color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in-4cdefd6d47b00a63949e2de5e65e417a.png")
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .facebook_connected_btn:hover {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook@2x-a1b234400fd230870d24b07f4a6baa17.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .twitter_connected_btn:hover {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter@2x-8960bce0b7b30ebb7d3524bb0b93a637.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .linkedin_connected_btn:hover {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in@2x-98d99953bb7693bb02774acf53c957e9.png")
+    }
+}
+
+.social_networks_form a:hover {
+    background-color: white;
+    text-decoration: none
+}
+
+.social_networks_form .input_fields {
+    background-color: rgba(255,255,255,0.4);
+    display: block !important;
+    border-radius: 3px;
+    font-size: 22px !important;
+    padding: 7px 0 6px 52px !important;
+    border: none !important;
+    width: 238px !important;
+    background-size: 16px 16px;
+    background-position: 13px 11px;
+    background-repeat: no-repeat;
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+.social_networks_form .input_fields:hover {
+    background-color: white
+}
+
+.social_networks_form .pinterest_input {
+    color: #b94038 !important;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_360_pinterest_color-cad53673be85d3837fbf20ca3c4c1707.png")
+}
+
+.social_networks_form .website_input {
+    color: #221f20 !important;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_340_globe_color-9e8e058a64da99ef807e9dcb57c11cf8.png")
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .pinterest_input {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_360_pinterest_color@2x-e7fa0c121d14224054abf613e227ce0a.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .social_networks_form .website_input {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_340_globe_color@2x-29a1ba6ba960d69ab99da7d43a4e2fcc.png")
+    }
+}
+
+.social_networks_form #user_pinterest_name::-webkit-input-placeholder {
+    color: #b94038
+}
+
+.social_networks_form #user_pinterest_name:-moz-placeholder {
+    color: #b94038
+}
+
+.social_networks_form #user_website::-webkit-input-placeholder {
+    color: #221f20
+}
+
+.social_networks_form #user_website:-moz-placeholder {
+    color: #221f20
+}
+
+.social_networks_form_input_hover {
+    background-color: white !important
+}
+
+.no_profile_page {
+    margin-top: 12px
+}
+
+.no_profile_page h2 {
+    font-size: 50px;
+    line-height: 55px
+}
+
+.no_quotes_page {
+    margin-top: 12px
+}
+
+.no_quotes_page h2 {
+    font-size: 50px;
+    line-height: 55px
+}
+
+.no_quotes_page div {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 12px
+}
+
+header {
+    margin: 0 0 28px 0
+}
+
+header ul {
+    display: inline;
+    font-size: 1px;
+    margin: 0 0 0 10px
+}
+
+header li {
+    display: inline;
+    vertical-align: 2px;
+    margin: 0 10px 0 0
+}
+
+#quote_text {
+    font-weight: 500;
+    margin-top: 12px
+}
+
+#quote_text .quote_author {
+    font-style: italic;
+    font-size: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    display: inline
+}
+
+#show-quote .hidden {
+    display: none
+}
+
+.small_quote_text {
+    font-size: 30px;
+    line-height: 43px
+}
+
+.big_quote_text {
+    font-size: 50px;
+    line-height: 57px
+}
+
+.previous_quote_btn,.next_quote_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/nav-next-e4ca090250e4eaab5c510d6f88fdb9e5.png");
+    background-repeat: no-repeat;
+    background-size: 62px 62px;
+    background-position: 0 0;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    width: 62px;
+    height: 62px;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    display: none
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .previous_quote_btn,.next_quote_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/nav-next@2x-47219136b6842caa58fa73dc83987c12.png")
+    }
+}
+
+.previous_quote_btn:hover,.next_quote_btn:hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.quote_btn_hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.previous_quote_btn {
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    float: left;
+    position: absolute;
+    margin-left: -102px
+}
+
+.next_quote_btn {
+    float: right;
+    position: absolute;
+    margin-left: 1000px
+}
+
+@media screen and (max-width: 1180px) {
+    .previous_quote_btn {
+        margin-left: 14px;
+        bottom: 80px
+    }
+
+    .next_quote_btn {
+        margin-left: 884px;
+        bottom: 80px
+    }
+}
+
+.main .dialog .quote_controls {
+    display: none;
+    margin: 10px 0 0 0
+}
+
+.main .dialog .quote_controls li {
+    display: inline
+}
+
+.main .dialog .quote_controls li a {
+    width: 50px;
+    display: inline-block
+}
+
+.main .dialog .quote_controls .hidden {
+    display: none
+}
+
+#quote_bar_wrapper {
+    margin-top: 5px;
+    height: 22px;
+    display: block
+}
+
+#quote_bar_wrapper>div {
+    background: transparent
+}
+
+#quote_bar_wrapper #tag_bar_textarea {
+    background-color: transparent;
+    width: 960px !important;
+    font-size: 20px;
+    line-height: 22px;
+    border: none !important
+}
+
+#quote_bar_wrapper .text-button {
+    background: #ffffff !important;
+    height: 26px !important;
+    font-size: 20px !important
+}
+
+#quote_bar_wrapper .text-prompt {
+    font-size: 20px !important;
+    line-height: 22px;
+    height: 26px
+}
+
+.quote-form .opening_quotation_mark {
+    font-size: 50px;
+    line-height: 55px;
+    float: left;
+    padding-top: 14px;
+    font-weight: 500
+}
+
+.quote-form .closing_quotation_mark {
+    font-size: 50px;
+    line-height: 55px;
+    vertical-align: 16px;
+    font-weight: 500
+}
+
+.quote-form textarea {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 55px;
+    width: 848px
+}
+
+.quote-form input[type="text"] {
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 22px;
+    width: 270px;
+    margin-top: 42px;
+    border-bottom: solid 1px rgba(255,255,255,0.6)
+}
+
+.quote-form input[type="submit"] {
+    margin: 31px 0 38px 0
+}
+
+.acResults {
+    background: #ffffff;
+    color: #000000;
+    padding: 13px;
+    font-size: 15px;
+    line-height: 20px
+}
+
+.discover_list {
+    margin: 20px 0 0 0;
+    float: left;
+    display: inline;
+    width: 710px
+}
+
+.discover_list p {
+    font-size: 20px;
+    margin: 15px 0 15px 0
+}
+
+.discover_list h2 {
+    font-size: 20px
+}
+
+.discover_list ul {
+    margin-top: 10px;
+    width: 908px
+}
+
+#discover .sidebar {
+    float: left;
+    display: inline;
+    margin: 20px 0 0 20px
+}
+
+#discover .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+#discover .sidebar h2 span {
+    font-family: 'Pictos';
+    padding-right: 6px
+}
+
+#discover .sidebar ul {
+    background-color: rgba(0,0,0,0.4);
+    vertical-align: top;
+    border-radius: 10px;
+    margin-bottom: 15px
+}
+
+#discover .sidebar li {
+    display: block;
+    vertical-align: top;
+    border-bottom: 1px white dotted
+}
+
+#discover .sidebar li:last-child {
+    border-bottom: none
+}
+
+#discover .sidebar li a {
+    width: 180px;
+    display: block;
+    padding: 5px 20px 5px 20px;
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+#discover .sidebar li a:hover {
+    text-decoration: none;
+    color: #fced62
+}
+
+#edit_user {
+    font-family: 'ArgumentumRegular', Arial, sans-serif
+}
+
+#edit_user h2 {
+    font-size: 50px;
+    margin-top: 16px;
+    font-family: 'ArgumentumMediumRegular', Arial, sans-serif
+}
+
+.user_settings {
+    padding-top: 28px;
+    height: 390px
+}
+
+.user_settings>li {
+    display: inline-block;
+    width: 220px;
+    padding-right: 20px;
+    vertical-align: top
+}
+
+.user_settings>li:last-child {
+    padding-right: 0 !important
+}
+
+.user_settings h3 {
+    display: inline
+}
+
+.user_settings_thick_line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin: 3px 0 23px 0
+}
+
+.user_account_settings label {
+    text-transform: uppercase;
+    font-size: 12px
+}
+
+.user_account_settings i {
+    display: block;
+    font-size: 12px
+}
+
+.user_account_settings .password_confirmation {
+    display: none
+}
+
+.user_account_settings_input {
+    background-color: transparent;
+    color: white;
+    font-family: 'ArgumentumRegular', Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 0 20px 0;
+    display: block;
+    width: 199px;
+    border-radius: 3px;
+    border: solid 1px white
+}
+
+.user_social_settings p {
+    margin: 20px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 12px
+}
+
+.user_social_settings i {
+    line-height: 19px;
+    font-size: 18px
+}
+
+.user_social_settings li {
+    margin-bottom: 10px
+}
+
+.user_social_settings a {
+    background-color: rgba(255,255,255,0.4);
+    background-size: 16px 16px;
+    background-position: 8px 6px;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 7px 0 6px 36px
+}
+
+.user_social_settings .facebook_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color-65d7850ba4ff9c4d8e517462e011b713.png");
+    color: #425b94
+}
+
+.user_social_settings .twitter_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color-69c96e21c44f6b7a116e9968a04ce0d9.png");
+    color: #4ea9e7
+}
+
+.user_social_settings .linkedin_btn {
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color-e4a9130e9c059f0440e51567ab5568ea.png");
+    color: #2b6cf9
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .facebook_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color@2x-bc53ed36b7896950ac2b7c32f450586c.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .twitter_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color@2x-56eeb2d88de0bc42ea441f4c82995e51.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .linkedin_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color@2x-f895568e654f44dd2db22daa2643dc00.png")
+    }
+}
+
+.user_social_settings .facebook_connected_btn {
+    color: #425b94;
+    background-color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color-65d7850ba4ff9c4d8e517462e011b713.png")
+}
+
+.user_social_settings .twitter_connected_btn {
+    color: #4ea9e7;
+    background-color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color-69c96e21c44f6b7a116e9968a04ce0d9.png")
+}
+
+.user_social_settings .linkedin_connected_btn {
+    color: #2b6cf9;
+    background-color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color-e4a9130e9c059f0440e51567ab5568ea.png")
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .facebook_connected_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook_color@2x-bc53ed36b7896950ac2b7c32f450586c.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .twitter_connected_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter_color@2x-56eeb2d88de0bc42ea441f4c82995e51.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .linkedin_connected_btn {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in_color@2x-f895568e654f44dd2db22daa2643dc00.png")
+    }
+}
+
+.user_social_settings .facebook_connected_btn:hover {
+    background-color: #2b6cf9 !important;
+    color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook-251701bde81a4cd154f1ae79ab0e9f24.png")
+}
+
+.user_social_settings .twitter_connected_btn:hover {
+    background-color: #2b6cf9 !important;
+    color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter-9907a2c52028ee5239de1247e120898e.png")
+}
+
+.user_social_settings .linkedin_connected_btn:hover {
+    background-color: #2b6cf9 !important;
+    color: white;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in-4cdefd6d47b00a63949e2de5e65e417a.png")
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .facebook_connected_btn:hover {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_390_facebook@2x-a1b234400fd230870d24b07f4a6baa17.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .twitter_connected_btn:hover {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_392_twitter@2x-8960bce0b7b30ebb7d3524bb0b93a637.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .linkedin_connected_btn:hover {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_377_linked_in@2x-98d99953bb7693bb02774acf53c957e9.png")
+    }
+}
+
+.user_social_settings a:hover {
+    background-color: white;
+    text-decoration: none
+}
+
+.user_social_settings .input_fields {
+    background-color: rgba(255,255,255,0.4);
+    display: block !important;
+    border-radius: 5px;
+    font-size: 16px !important;
+    padding: 7px 0 6px 36px !important;
+    border: none !important;
+    width: 184px !important;
+    background-size: 16px 16px;
+    background-position: 8px 8px;
+    background-repeat: no-repeat
+}
+
+.user_social_settings .input_fields:hover {
+    background-color: white
+}
+
+.user_social_settings .pinterest_input {
+    color: #b94038 !important;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_360_pinterest_color-cad53673be85d3837fbf20ca3c4c1707.png")
+}
+
+.user_social_settings .website_input {
+    color: #221f20 !important;
+    background-image: url("http://cdn.changemakrs.com/assets/glyphicons_340_globe_color-9e8e058a64da99ef807e9dcb57c11cf8.png")
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .pinterest_input {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_360_pinterest_color@2x-e7fa0c121d14224054abf613e227ce0a.png")
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .user_social_settings .website_input {
+        background-image: url("http://cdn.changemakrs.com/assets/glyphicons_340_globe_color@2x-29a1ba6ba960d69ab99da7d43a4e2fcc.png")
+    }
+}
+
+.user_social_settings #user_pinterest_name::-webkit-input-placeholder {
+    color: #b94038
+}
+
+.user_social_settings #user_pinterest_name:-moz-placeholder {
+    color: #b94038
+}
+
+.user_social_settings #user_website::-webkit-input-placeholder {
+    color: #221f20
+}
+
+.user_social_settings #user_website:-moz-placeholder {
+    color: #221f20
+}
+
+.user_social_settings_input_hover {
+    background-color: white !important
+}
+
+.user_photo li {
+    margin-bottom: 15px;
+    font-size: 11px
+}
+
+.user_photo .cabinet {
+    width: 91px;
+    height: 22px;
+    padding: 6px 13px 0 10px;
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #8b8991;
+    color: black;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.user_photo .cabinet input {
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+.user_photo .spinner_container {
+    margin-left: 130px;
+    margin-top: -14px;
+    position: absolute
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0
+}
+
+.reveal-modal {
+    visibility: hidden;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    width: 520px;
+    background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+    position: absolute;
+    z-index: 101;
+    padding: 30px 40px 34px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -box-shadow: 0 0 10px rgba(0,0,0,0.4)
+}
+
+.reveal-modal.small {
+    width: 200px;
+    margin-left: -140px
+}
+
+.reveal-modal.medium {
+    width: 400px;
+    margin-left: -240px
+}
+
+.reveal-modal.large {
+    width: 600px;
+    margin-left: -340px
+}
+
+.reveal-modal.xlarge {
+    width: 800px;
+    margin-left: -440px
+}
+
+.reveal-modal .close-reveal-modal {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+    font-weight: bold;
+    cursor: pointer
+}
+ 
